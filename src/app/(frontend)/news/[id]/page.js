@@ -15,7 +15,7 @@ export default function ArticlePage() {
   const [articleLoading, setArticleLoading] = useState(true);
 
   useEffect(() => {
-    axios("http://127.0.0.1:7800/news/category-wise")
+    axios("https://marinnews-api.legitinfosystem.online/news/category-wise")
       .then((response) => {
         setTopStories(response?.data["top-stories"]);
         setLoading(false);
@@ -29,7 +29,7 @@ export default function ArticlePage() {
   useEffect(() => {
     if (id) {
       setArticleLoading(true);
-      axios(`http://127.0.0.1:7800/news/${id}`)
+      axios(`https://marinnews-api.legitinfosystem.online/news/${id}`)
         .then((response) => {
           setArticle(response.data);
           setArticleLoading(false);
@@ -118,7 +118,7 @@ export default function ArticlePage() {
               <img
                 src={
                   article.thumbnail_path
-                    ? `http://127.0.0.1:7800/${article.thumbnail_path.replace(
+                    ? `https://marinnews-api.legitinfosystem.online/${article.thumbnail_path.replace(
                         /\\/g,
                         "/"
                       )}`
@@ -138,7 +138,7 @@ export default function ArticlePage() {
             <div className="mb-6">
               <video controls className="w-full rounded border">
                 <source
-                  src={`http://127.0.0.1:7800/${article.video_path.replace(
+                  src={`https://marinnews-api.legitinfosystem.online/${article.video_path.replace(
                     /\\/g,
                     "/"
                   )}`}

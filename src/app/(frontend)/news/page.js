@@ -83,7 +83,7 @@ export default function News() {
   const [editorials, setEditorial] = useState([]);
 
   useEffect(() => {
-    axios("http://127.0.0.1:7800/news/category-wise")
+    axios("https://marinnews-api.legitinfosystem.online/news/category-wise")
       .then((response) => {
         setNewsData(response?.data);
         setLoading(false);
@@ -109,7 +109,7 @@ export default function News() {
         )}
         {topStories?.length > 0 && (
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {topStories.map((story, index) => (
+            {topStories?.map((story, index) => (
               <div
                 key={index}
                 className="flex space-x-2 border-r last:border-r-0 pr-2"
@@ -229,7 +229,7 @@ export default function News() {
               MORE <span className="text-gray-500">TOP STORIES</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {topStories.map((story, idx) => (
+              {topStories?.map((story, idx) => (
                 <div key={idx} className="rounded-md relative mb-8">
                   <div className="rounded min-w-[400px] min-h-[242px]">
                     <Link

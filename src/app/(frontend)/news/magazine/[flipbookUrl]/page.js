@@ -1,6 +1,8 @@
 "use client";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+// import PDFFlipBook from "@/components/PDFFlipBook";
+import FlipBook from "@/components/FlipPage";
 
 export default function FlipbookPage() {
   const params = useParams();
@@ -36,17 +38,8 @@ export default function FlipbookPage() {
         <span className="text-gray-700 text-xl font-bold">×</span>
       </button>
 
-      {/* Flipbook Container - Full Screen */}
-      <div className="h-screen w-full">
-        <iframe
-          src={decodedUrl}
-          width="100%"
-          height="100%"
-          style={{ border: "none" }}
-          allowFullScreen
-          title="Magazine Flipbook"
-        ></iframe>
-      </div>
+      {/* PDFFlipBook Component */}
+      <FlipBook pdfUrl={decodedUrl} />
     </div>
   );
 }

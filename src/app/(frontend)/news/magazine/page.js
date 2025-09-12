@@ -6,32 +6,38 @@ const previousEditions = [
   {
     img: "https://maritime-executive.com/media/images/article/Photos/Magazine/edition1.jpg",
     label: "JUL/AUG 2024",
-    flipbookUrl: "https://your-flipbook-link-1.3dissue.com",
+    flipbookUrl:
+      "https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf",
   },
   {
     img: "https://maritime-executive.com/media/images/article/Photos/Magazine/edition2.jpg",
     label: "SEP/OCT 2023",
-    flipbookUrl: "https://your-flipbook-link-2.3dissue.com",
+    flipbookUrl:
+      "https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf",
   },
   {
     img: "https://maritime-executive.com/media/images/article/Photos/Magazine/edition3.jpg",
     label: "NOV/DEC 2023",
-    flipbookUrl: "https://your-flipbook-link-3.3dissue.com",
+    flipbookUrl:
+      "https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf",
   },
   {
     img: "https://maritime-executive.com/media/images/article/Photos/Magazine/edition4.jpg",
     label: "JAN/FEB 2023",
-    flipbookUrl: "https://your-flipbook-link-4.3dissue.com",
+    flipbookUrl:
+      "https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf",
   },
   {
     img: "https://maritime-executive.com/media/images/article/Photos/Magazine/edition5.jpg",
     label: "MAR/APR 2023",
-    flipbookUrl: "https://your-flipbook-link-5.3dissue.com",
+    flipbookUrl:
+      "https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf",
   },
   {
     img: "https://maritime-executive.com/media/images/article/Photos/Magazine/edition6.jpg",
     label: "MAY/JUN 2023",
-    flipbookUrl: "https://your-flipbook-link-6.3dissue.com",
+    flipbookUrl:
+      "https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf",
   },
 ];
 
@@ -98,7 +104,7 @@ export default function MagazinePage() {
                   className="bg-red-600 text-white font-bold px-6 py-2 rounded shadow w-max hover:bg-red-700 transition-colors"
                   onClick={() =>
                     handleReadNow(
-                      "https://cloud.3dissue.net/44540/44166/44785/135649/index.html?72466"
+                      "https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf"
                     )
                   }
                 >
